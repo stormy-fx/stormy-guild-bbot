@@ -327,7 +327,7 @@ def generate_nickname(session, open_id):
     superscript = str.maketrans(
         "0123456789", "⁰¹²³⁴⁵⁶⁷⁸⁹"
     )
-    return "STORMY" + str(number).translate(superscript)
+    return "ƧƬƠƦMƳ" + str(number).translate(superscript)
 
 def send_major_register(session, name, access_token, open_id, ua, dev=None):
     L_step(f"send_major_register → {MAJOR_REGISTER_URL}")
@@ -745,7 +745,7 @@ def create_one_account(worker_id: int, total: int, counters: dict):
 
             # Password
             random_suffix = hashlib.sha256(os.urandom(16)).hexdigest()[:12].upper()
-            password = f"STORMYFX_{random_suffix}"
+            password = f"Ajay_{random_suffix}"
             L_info(f"  password: {password}")
 
             # STEP 1
